@@ -24,5 +24,9 @@ export default StyleSheet.create({
         fontSize: 50,
         fontFamily: 'sans-serif-thin',
         fontStyle: 'italic',
+    },
+    gif:{
+        width: '20%',
+        height: '20%',
     }
 })

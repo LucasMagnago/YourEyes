@@ -12,7 +12,19 @@ export default StyleSheet.create({
         borderTopLeftRadius: 35,
         borderTopRightRadius: 35,
     },
-    botao:{
+    botaoON:{
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: Dimensions.get('window').width * 0.25,
+        height: Dimensions.get('window').width * 0.25,
+        borderRadius: Math.round(Dimensions.get('window').width + Dimensions.get('window').height) / 2,
+        borderWidth: 5,
+        borderColor: 'green',
+        backgroundColor: 'white',
+        borderRadius: 50,
+        underLayColor:'#008'
+    },
+    botaoOFF:{
         alignItems: 'center',
         justifyContent: 'center',
         width: Dimensions.get('window').width * 0.25,

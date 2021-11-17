@@ -9,7 +9,9 @@ export default function top(){
                 <Text style={style.titulo}>YourEyes</Text>
                 <Image source={require('../../assets/images/logo.png')} style={style.logo}/>
             </View>
-
+            {/* <View>
+                <Image source={require('../../assets/gifs/gif.gif')} resizeMode='contain' style={{width:'50%', height:'50%'}}/>
+            </View> */}
         </View>
     );
 }
