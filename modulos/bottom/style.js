@@ -15,8 +15,8 @@ export default StyleSheet.create({
     botao:{
         alignItems: 'center',
         justifyContent: 'center',
-        width: Dimensions.get('window').width * 0.28,
-        height: Dimensions.get('window').width * 0.28,
+        width: Dimensions.get('window').width * 0.25,
+        height: Dimensions.get('window').width * 0.25,
         borderRadius: Math.round(Dimensions.get('window').width + Dimensions.get('window').height) / 2,
         borderWidth: 5,
         borderColor: 'red',
