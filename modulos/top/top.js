@@ -9,8 +9,7 @@ export default function top(){
                 <Text style={style.titulo}>YourEyes</Text>
                 <Image source={require('../../assets/images/logo.png')} style={style.logo}/>
             </View>
-            {/* <Text>Deus é mais! Amém</Text>
-            <Text>aaäa</Text> */}
+
         </View>
     );
 }
