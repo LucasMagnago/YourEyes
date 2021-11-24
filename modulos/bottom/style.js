@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet, Dimensions, Touchable } from 'react-native';
 
 export default StyleSheet.create({
     container:{
@@ -38,5 +38,5 @@ export default StyleSheet.create({
     icone:{
         width: 50,
         height: 50,
-    }
+    },
 })
