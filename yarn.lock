@@ -5575,7 +5575,12 @@
     "jscodeshift" "^0.11.0"
     "nullthrows" "^1.1.1"
 
-"react-native@*", "react-native@0.66.3":
+"react-native-sound@^0.11.1":
+  "integrity" "sha512-6cVmCSOvSjCBmIoc+9FFINpT1nW53KlvF/hIyD1uj+HI4NUOma08zI+8pGIpY9cExPmsOh+OoFX3EOODpY78yw=="
+  "resolved" "https://registry.npmjs.org/react-native-sound/-/react-native-sound-0.11.1.tgz"
+  "version" "0.11.1"
+
+"react-native@*", "react-native@>=0.8.0", "react-native@0.66.3":
   "integrity" "sha512-B/dQpuvta9YvF5MihDWefoGlTvxzUHK5X5RjdrXHAu/ihTehJXxEA+m6z/tufp1ZUMDjU+tMZK6gnehzCuYfzw=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.66.3.tgz"
   "version" "0.66.3"
