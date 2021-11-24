@@ -5,7 +5,8 @@ import Sound from 'react-native-sound';
 
 export default function Bottom(){
 
-    const sound = new Sound('beep.mp3');
+    const slowBeep = new Sound('beep.mp3');
+    // const fastBeep = new Sound('.np3');
     const ONE_SECOND_IN_MS = 1000;
 
     const [vibrar, setVibrar] = useState(true)
@@ -23,17 +24,25 @@ export default function Bottom(){
         }
     }
 
-    function ExecutarAudio(state){
+    function ExecutarAudio(state, var_ard){
         if(state){
-            sound.play()
+            while(var_ard < 50){
+                if(var_ard < 25){
+                    setInterval( ()=> slowBeep.play(), 1500);  
+                }else{
+                    setInverval( ()=> slowBeep.play(), 1500);
+                }
+            }
         }
     }
-    function ExecutarVibracao(state){
+
+    function ExecutarVibracao(state, var_ard){
         if(state){
-            Vibration.vibrate(0.1 * ONE_SECOND_IN_MS)
+            while(var_ard < 50){
+                Vibration.vibrate(0.2 * ONE_SECOND_IN_MS)
+            }
         }
     }
-    
 
     return(
         <View style={style.container}>
@@ -77,5 +86,6 @@ export default function Bottom(){
                 </TouchableHighlight>
             </View>
         </View>
+
     );
 }
