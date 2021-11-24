@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { View, Text, TouchableHighlight, Image , Vibration} from 'react-native';
 import style from './style';
 import Sound from 'react-native-sound';
+import arduino from '../bluetooth/bluetooth';
 
 export default function Bottom(){
 
-    const slowBeep = new Sound('beep.mp3');
+    const Beep = new Sound('beep.mp3');
     // const fastBeep = new Sound('.np3');
     const ONE_SECOND_IN_MS = 1000;
 
@@ -28,9 +29,9 @@ export default function Bottom(){
         if(state){
             while(var_ard < 50){
                 if(var_ard < 25){
-                    setInterval( ()=> slowBeep.play(), 1500);  
+                    setInterval( ()=> Beep.play(), 1500);  
                 }else{
-                    setInverval( ()=> slowBeep.play(), 1500);
+                    setInverval( ()=> Beep.play(), 1500);
                 }
             }
         }
