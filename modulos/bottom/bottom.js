@@ -7,7 +7,8 @@ import arduino from '../bluetooth/bluetooth';
 export default function Bottom(){
 
     const Beep = new Sound('beep.mp3');
-    // const fastBeep = new Sound('.np3');
+    const Beep16 = new Sound('beep16x.mp3');
+    const Beep20 = new Sound('beep20x.mp3')
     const ONE_SECOND_IN_MS = 1000;
 
     const [vibrar, setVibrar] = useState(true)
@@ -45,6 +46,8 @@ export default function Bottom(){
         }
     }
 
+    // setInterval(()=> Beep16.play(), 1000)
+
     return(
         <View style={style.container}>
 
@@ -52,8 +55,8 @@ export default function Bottom(){
                 <TouchableHighlight
                     importantForAccessibility="no"
                     onPress={()=>{
-                        StateChange(vibrar)
                         setVibrar(!vibrar)
+                        StateChange(vibrar) 
                     }}
                     underlayColor='white'
                 >
@@ -65,8 +68,8 @@ export default function Bottom(){
                 <TouchableHighlight
                     importantForAccessibility="no"
                     onPress={()=>{
-                        StateChange(audio)
                         setAudio(!audio)
+                        StateChange(audio)
                     }}
                     underlayColor='white'
                 >
@@ -78,8 +81,8 @@ export default function Bottom(){
                 <TouchableHighlight
                     importantForAccessibility="no"
                     onPress={()=>{
-                        StateChange(bluetooth)
                         setBluetooth(!bluetooth)
+                        StateChange(bluetooth)
                     }}
                     underlayColor='white'
                 >

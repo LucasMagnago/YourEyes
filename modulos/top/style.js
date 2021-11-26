@@ -28,5 +28,15 @@ export default StyleSheet.create({
     gif:{
         width: '20%',
         height: '20%',
-    }
+    },
+    sit:{
+        width: '100%',
+        height: '75%',
+        textAlign: 'center',
+        position: 'absolute',
+        top: '30%',
+        fontSize: 35,
+        fontFamily: 'sans-serif-thin',
+        fontStyle: 'italic',
+    },
 })
